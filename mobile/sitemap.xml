@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+    <url>
+        <loc>http://kacy.notaires.fr/mobile/</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/nous-contacter.html</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/nous-situer.html</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/mentions-legales.html</loc>
+        <mobile:mobile/>
+    </url>
+	
+	    <url>
+        <loc>http://kacy.notaires.fr/mobile/gp/</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/gp/pou-pran-kontak.html</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/gp/touve-kote-nou-ye.html</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/gp/mansion-legal.html</loc>
+        <mobile:mobile/>
+    </url>
+	
+		    <url>
+        <loc>http://kacy.notaires.fr/mobile/en/</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/en/contact-us.html</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/en/find-us.html</loc>
+        <mobile:mobile/>
+    </url>
+	 <url>
+        <loc>http://kacy.notaires.fr/mobile/en/legal-notices.html</loc>
+        <mobile:mobile/>
+    </url>
+</urlset>

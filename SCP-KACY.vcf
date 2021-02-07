@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iOS 5.0.1//EN
+N:KACY;SCP;;;
+FN:SCP KACY
+TITLE:Notaire
+EMAIL;type=INTERNET;type=WORK;type=pref:scp.kacy@notaires.fr
+TEL;type=WORK;type=VOICE;type=pref:0590.82.01.30
+TEL;type=WORK;type=FAX:05 90 91 22 70
+item1.ADR;type=WORK;type=pref:;;4 Rue Achille RENE-BOISNEUF;POINTE-A-PITRE;;97110;Guadeloupe
+item1.X-ABADR:gp
+item2.URL;type=pref:http://kacy.notaires.fr
+item2.X-ABLabel:_$!<HomePage>!$_
+END:VCARD

@@ -1,0 +1,149 @@
+.contenu{
+max-width: 64%;
+margin: 20px auto 10px auto;
+margin-bottom: 20px;
+text-align: left;
+padding-top: 20px;
+
+}
+
+.encadre_nouscontacter{
+max-width: 621px;
+margin: 20px auto 10px auto;
+/*margin-bottom: 20px;
+text-align: left;
+padding-top: 20px;*/
+
+}
+
+.ui-footer .ui-title{
+margin: 2em 10px .8em;
+}
+
+.liens{
+line-height: 1em;
+font-size: 0.7em;
+float: none;
+width: 99%;
+margin: 10px 10px 10px 10px;
+/*text-align: right;*/
+}
+.liens a{
+color:#fff!important;
+}
+#lien2{
+float:left;}
+
+#lien1{
+float:right;}
+
+.langue{
+line-height: 1.9em;
+font-size: 0.7em;
+float: left;
+/*width: 120px;*/
+margin-top: 8px;
+text-align: left;
+position: absolute;
+}
+.langue a{
+color:#fff!important;
+}
+.langue a:hover{
+font-style:italic;
+}
+
+#lieu{
+margin: -49px 12px 0 0;
+line-height: 1.9em;
+font-size: 0.7em;
+float: right;
+
+}
+#img1{
+margin-left: 14%;
+margin-top: 18px;
+float: left;
+display: inline;
+/*margin-left: 15%;*/
+width: 22%;
+}
+
+#img1 img{
+max-width: 316px;
+max-height:223px;
+
+}
+#img2{
+float: left;
+margin-top: 18px;
+width: 22%;
+display: inline;
+/*margin-left: 15%;*/
+}
+#img2 img{
+max-width: 316px;
+max-height:223px;
+}
+
+
+#contenu2{
+width: 29%;
+display: inline;
+float: left;
+
+}
+
+.ulformalites{
+  padding: 0;
+
+}
+
+
+#cdv2013{
+text-align: center;
+}
+
+
+#img3{
+width: 55%;
+margin:auto;
+margin-bottom:30px;
+margin-top:-22px;
+/*background-image:url(../img/rendezvous.jpg);*/
+}
+
+#img3 img{
+max-width: 326px;
+max-height:233px;
+
+}
+#img3:hover{
+/*background-image:url(../img/rendezvous2.jpg);*/
+
+}
+
+#contenu_fiches{
+max-width: 900px;
+/*max-width: 49%;*/
+height: 391px;
+padding-top:0px;
+}
+.fiches{
+margin:auto;
+float:left;
+width:300px;
+height:393px;
+background-image:url(../img/fond_pieces.jpg);
+}
+.fiches a{
+font-size:0.9em;
+text-decoration:none;
+}
+.fiches a:hover{
+text-decoration:underline;
+}
+
+.fiches li{
+width:221px;
+}

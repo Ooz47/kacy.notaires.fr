@@ -1,0 +1,86 @@
+/*
+#body.ie a.ui-link-inherit, .ui-li-static.ui-li {
+padding: .7em 15px .7em 15px;
+display: block;}
+
+#body.ie a.ui-link-inherit {
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+
+#body.ie a.ui-link-inherit {
+color: #3890C2;
+}
+*/
+
+
+
+#html{
+min-height: 300px;
+height: 100%;
+display:block;
+}
+
+#body{
+/*height: 100%;*/
+display:block;
+margin: 0;}
+
+#option, #option2, #option3, #option4, #option5 {
+display: block;
+margin: 0;
+position: relative;
+overflow: visible;
+text-align: left;
+border-width: 0;
+border-top-width: 1px;
+border: 1px solid #CCC /*{c-bup-border}*/;
+background: #EEE /*{c-bup-background-color}*/;
+font-weight: bold;
+color: #444 /*{c-bup-color}*/;
+text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 1px /*{c-bup-shadow-radius}*/ #F6F6F6 /*{c-bup-shadow-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #FDFDFD /*{c-bup-background-start}*/), to( #EEE /*{c-bup-background-end}*/));
+background-image: -webkit-linear-gradient(#FDFDFD /*{c-bup-background-start}*/, #EEE /*{c-bup-background-end}*/);
+background-image: -moz-linear-gradient(#FDFDFD /*{c-bup-background-start}*/, #EEE /*{c-bup-background-end}*/);
+background-image: -ms-linear-gradient(#FDFDFD /*{c-bup-background-start}*/, #EEE /*{c-bup-background-end}*/);
+background-image: -o-linear-gradient(#FDFDFD /*{c-bup-background-start}*/, #EEE /*{c-bup-background-end}*/);
+background-image: linear-gradient(#FDFDFD /*{c-bup-background-start}*/, #EEE /*{c-bup-background-end}*/);
+}
+
+
+.langue{
+position:relative;
+}
+
+#content
+{
+	overflow: visible;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	overflow-x: hidden;
+}
+#content ul
+{
+	
+	margin-right: -15px;
+	margin-bottom: -15px;
+	margin-left: -15px;
+}
+#title2{
+font-size: 0.8em;
+margin: -2.6em 10px .8em;}
+
+.fiches a{
+
+font-weight:regular!important;
+font-size:0.8em;
+color: #2489CE;
+text-decoration:none;
+}

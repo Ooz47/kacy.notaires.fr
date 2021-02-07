@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:2.1
+FN:SCP KACY
+N:KACY;SCP;;;
+ORG:Notaire
+TEL;TYPE=WORK:0590820130
+TEL;WORK;FAX:0590912270
+X-URL:http://kacy.notaires.fr
+URL:http://kacy.notaires.fr
+URL;TYPE=HOME:http://kacy.notaires.fr
+URL;TYPE=WORK:http://kacy.notaires.fr
+EMAIL;TYPE=PREF;TYPE=INTERNET:scp.kacy@notaires.fr
+ADR;TYPE=WORK:;;4 rue Achille RENE-BOISNEUF;POINTE-A-PITRE;GUADELOUPE;97110;FRANCE
+NOTE:
+END:VCARD

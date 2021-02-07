@@ -1,0 +1,17 @@
+# Ignore configuration files that may contain sensitive information.
+inc/img/*
+inc/pdf/*
+inc/conf/*
+cartedevoeux2013/*
+cartedevoeux2014/*
+cartedevoeux2015/*
+cartedevoeux2016/*
+cartedevoeux2017/*
+cartedevoeux2018/*
+cartedevoeux2019/*
+cartedevoeux2020/*
+
+# Ignore paths that contain user-generated content.
+#envoitextefinal/auteur/textedef/*
+#sites/*/files
+#sites/*/private
