@@ -10,4 +10,6 @@ tarteaucitron.init({
     "moreInfoLink": false,
     "handleBrowserDNTRequest": false, /* Deny everything if DNT is on */
     //"cookieDomain": ".example.com" /* Nom de domaine sur lequel sera posé le cookie pour les sous-domaines */
+    "privacyUrl": "/#mentions-legales.html",
+
 });
