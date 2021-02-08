@@ -14,7 +14,7 @@ tarteaucitron.lang = {
     "personalize": "Personnaliser",
     "close": "Fermer",
 
-    "privacyUrl": "Politique de confidentialité",
+    "privacyUrl": "Information sur les cookies",
 
     "all": "Préférence pour tous les services",
 
