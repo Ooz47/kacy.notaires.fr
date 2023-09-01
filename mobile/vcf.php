@@ -6,7 +6,7 @@
                 $mail = 'contact@koncept47.com';
         }
 
-if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui présentent des bogues.
+if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui prï¿½sentent des bogues.
 {
 	$passage_ligne = "\r\n";
 }
@@ -14,39 +14,39 @@ else
 {
 	$passage_ligne = "\n";
 }
-//=====Déclaration des messages au format texte et au format HTML
-$message_txt = " Cher visiteur, vous trouverez ci-jointe la carte de visite de l’Office notarial SCP KACY. 
-En l'ouvrant, vous pourrez facilement ajouter nos coordonnées à votre carnet d'adresses. 
-N'hésitez pas à nous consulter. 
+//=====Dï¿½claration des messages au format texte et au format HTML
+$message_txt = " Cher visiteur, vous trouverez ci-jointe la carte de visite de lï¿½Office notarial SAS Tamara CHERGUI-VILO. 
+En l'ouvrant, vous pourrez facilement ajouter nos coordonnï¿½es ï¿½ votre carnet d'adresses. 
+N'hï¿½sitez pas ï¿½ nous consulter. 
 
 .";
 $message_html = "<html><head></head><body>
- Cher visiteur, vous trouverez ci-jointe la carte de visite de l’Office notarial SCP KACY.<br/>
-En l'ouvrant, vous pourrez facilement ajouter nos coordonnées à votre carnet d'adresses. <br/>
-N'hésitez pas à nous consulter.<br/><br/>
+ Cher visiteur, vous trouverez ci-jointe la carte de visite de lï¿½Office notarial SAS Tamara CHERGUI-VILO.<br/>
+En l'ouvrant, vous pourrez facilement ajouter nos coordonnï¿½es ï¿½ votre carnet d'adresses. <br/>
+N'hï¿½sitez pas ï¿½ nous consulter.<br/><br/>
 </body></html>
 ";
 //==========
  
-//=====Lecture et mise en forme de la pièce jointe.
+//=====Lecture et mise en forme de la piï¿½ce jointe.
 $fichier   = fopen("SCP-KACY.vcf", "r");
 $attachement = fread($fichier, filesize("SCP-KACY.vcf"));
 $attachement = chunk_split(base64_encode($attachement));
 fclose($fichier);
 //==========
  
-//=====Création de la boundary.
+//=====Crï¿½ation de la boundary.
 $boundary = "-----=".md5(rand());
 $boundary_alt = "-----=".md5(rand());
 //==========
  
-//=====Définition du sujet.
-$sujet = "Carte de visite SCP KACY";
+//=====Dï¿½finition du sujet.
+$sujet = "Carte de visite SAS Tamara CHERGUI-VILO";
 //=========
  
-//=====Création du header de l'e-mail.
-$header = "From: \"SCP KACY\"<scp.kacy@notaires.fr>".$passage_ligne;
-$header.= "Reply-to: \"SCP KACY\" <scp.kacy@notaires.fr>".$passage_ligne;
+//=====Crï¿½ation du header de l'e-mail.
+$header = "From: \"SAS Tamara CHERGUI-VILO\"<office-chergui-vilo@notaires.fr>".$passage_ligne;
+$header.= "Reply-to: \"SAS Tamara CHERGUI-VILO\" <office-chergui-vilo@notaires.fr>".$passage_ligne;
 $header.= "MIME-Version: 1.0".$passage_ligne;
 $header.= "Content-Type: multipart/mixed;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 $header .= "X-Sender: <www.kacy.notaires.fr>".$passage_ligne;
@@ -55,7 +55,7 @@ $header .= "X-auth-smtp-user: postmaster@kacy.notaires.fr".$passage_ligne;
 $header .= "X-abuse-contact: postmaster@kacy.notaires.fr".$passage_ligne; 
 //==========
  
-//=====Création du message.
+//=====Crï¿½ation du message.
 $message = $passage_ligne."--".$boundary.$passage_ligne;
 $message.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary_alt\"".$passage_ligne;
 $message.= $passage_ligne."--".$boundary_alt.$passage_ligne;
@@ -79,7 +79,7 @@ $message.= $passage_ligne."--".$boundary_alt."--".$passage_ligne;
   
 $message.= $passage_ligne."--".$boundary.$passage_ligne;
  
-//=====Ajout de la pièce jointe.
+//=====Ajout de la piï¿½ce jointe.
 $message.= "Content-Type: text/x-vcard; name=\"SCP-KACY.vcf\"".$passage_ligne;
 $message.= "Content-Transfer-Encoding: base64".$passage_ligne;
 $message.= "Content-Disposition: attachment; filename=\"SCP-KACY.vcf\"".$passage_ligne;
