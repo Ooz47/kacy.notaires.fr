@@ -1,0 +1,16 @@
+<script src="prezi_player.js"></script>
+<div id="prezi-player"  style="margin:10px auto auto auto; width:640px; "></div>
+<script type="text/javascript">
+    var player = new PreziPlayer('prezi-player', {
+    'preziId' : 'ei_wrrsucqln',
+	controls: true,
+    explorable: false
+});
+
+player.on(PreziPlayer.EVENT_STATUS, function(event) {
+    if (event.value == PreziPlayer.STATUS_CONTENT_READY) {
+        player.play(1000);
+    }
+});
+  </script>	  
+

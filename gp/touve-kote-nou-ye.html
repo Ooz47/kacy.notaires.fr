@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -197,4 +198,205 @@ lang1.setAttribute('onmousedown', 'javascript:document.location.href=\'../en/fin
       
 <script type="text/javascript" src="../inc/js/tac_custom.js"></script>   
 </body>
+=======
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+   <head>
+      <title>Touv&eacute; kot&eacute; nou y&eacute; | SAS Tamara CHERGUI-VILO Notaire Associé</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    <meta http-equiv="Content-Language" content="en-en" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../inc/style/jquery.mobile-1.0.1.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../inc/style/style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../inc/style/style_web.css" />
+	<!--[if IE]><link rel="stylesheet" type="text/css" media="screen" href="../inc/style/ie.css" /><![endif]-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="../inc/js/jquery.mobile-1.0a3.min.js"></script>
+	  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="screen" href="../inc/style/ie7.css" /><![endif]-->
+<script type="text/javascript" src="../inc/js/tarteaucitron/tarteaucitron.js"></script>
+<script type="text/javascript" src="../inc/js/tackacy.js"></script> 
+   </head>
+
+<body id="body">  
+	<div data-role="page" id="page" > 
+		<div data-role="header" id="header" data-backbtn="false">
+			<div class="langue" >
+				<a id="lang1" href="#" onmousedown="javascript:document.location.href='../en/#find-us.html'">English</a><br/>
+				<a id="lang2" href="#" onmousedown="javascript:document.location.href='../#nous-situer.html'">Fran&ccedil;ais</a>
+			</div>
+            <h1  id="title" >SAS Tamara CHERGUI-VILO Notaire Associé<br/><small>Touv&eacute; kot&eacute; nou y&eacute;</small></h1>
+			<div id="lieu">
+				<a class="newbtn" id="boutonclient" href="https://www.mondossiernotaire.fr/" target="_blank">Espace client</a>
+				<a class="newbtn" id="boutonpaiement" href="https://paiement.genapicloud.com/CDCProxy/Form?Guid=568e224e-c274-4a48-991f-ceb1f72981a4" target="_blank">Paiement en ligne</a>
+			</div>	
+         </div>
+<div data-role="content" id="content"> 
+		
+		
+		 <b>Adrès annou :</b> 4, Rue Achille Ren&eacute;-Boisneuf 97110 POINTE-A-PITRE <br/>
+           <p>
+<!--<iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps/ms?msa=0&amp;msid=207243945200164552651.0004c947bedd77e72cc17&amp;hl=fr&amp;ie=UTF8&amp;t=h&amp;iwloc=0004c947bee0b573f1872&amp;ll=16.236024,-61.535384&amp;spn=0,0&amp;output=embed"></iframe>-->
+<!-- <a id="lien_plan2" target="_blank" href="https://maps.google.com/maps?q=scp+kacy&hl=fr&ll=16.236019,-61.535379&spn=0.008642,0.009645&hq=scp+kacy&t=h&cid=5322651419013171465&z=17&iwloc=A"> -->
+	<img src="../inc/img/plan_acces2022.jpg" alt="Plan d'accès SAS Tamara CHERGUI-VILO" width="500" height="500" />
+<!-- </a> -->
+<br />
+
+</p>		<br/>
+            <ul data-role="listview" id="listview">
+               <li id="option"><a href="index.html">Pr&egrave;mi&eacute; p&ocirc;z douvan</a></li>
+			 <li id="option2"><a href="pou-pran-kontak.html">Pou pran kontak</a></li>
+			 <li id="option5"><a href="votre-rendez-vous-notaire.html">Paré randévou a-w</a></li>
+                 <!-- <li  id="option3"><a class="contact" href="https://www.kacy.notaires.fr/mobile/SCP-KACY.vcf">Rantr&eacute; an karn&eacute;-ladr&egrave;s a-w</a></li> -->
+			 <!-- <li><a href="tel:+590590820130">imedyat r&eacute;l&eacute;</a></li>-->
+            </ul>
+			
+				<script type="text/javascript" >
+	 
+	  	  var agent=navigator.userAgent.toLowerCase();
+		   var is_blackberry = (agent.indexOf('blackberry')!=-1);
+  	  var is_iphone = (agent.indexOf('iphone')!=-1);
+	  //var is_iphone = (agent.indexOf('mozilla/5.0')!=-1);
+        var is_ipod = (agent.indexOf('ipod')!=-1);
+        var is_ipad = (agent.indexOf('ipad')!=-1);
+		//alert(agent);
+        if (is_iphone||is_ipod||is_ipad){
+		        $(".contact").click(function(e) {
+                e.preventDefault();
+				e.stopPropagation();
+                        var adresse = window.prompt("Ekri adrès nichtwèl azòt piba souplé pou nou pé sa voyé katvizit annou pou zot (men chonjé sa : nou pa ka gadé adrès a zot si chouval entèwnèt annou)","");
+                        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                       
+						if(adresse == null){
+						
+						}
+						else{
+						
+						if((emailReg.test(adresse)) &&(( adresse != ''))){
+						jQuery.ajax({
+                                        data: {adr:adresse},
+                                        url: 'vcf.php',
+                                        success: function(){alert("Zanvwa")},
+                                        error: function(){alert("Zanvwa")}
+                                });
+                        }else{
+						       alert("Mové adrès nichtwèl");
+                        }
+						}
+                });
+        }
+		
+		 if (is_blackberry){
+		//alert("is_blackberry");
+		    $(".contact").click(function(e) {
+                e.preventDefault();
+				e.stopPropagation();
+                    location.href= "../SCP_KACY.vcf" ;
+                });
+		document.getElementById('lien_plan').style.display = 'none';
+	document.getElementById('lien_plan2').setAttribute('href', '#');
+		}
+		
+	  </script>
+         </div>
+		 <div data-role="footer" id="footer">
+		  <div class="liens">
+	<a id="lien1" href="mansion-legal.html">Mansion l&eacute;gal</a>
+	<a id="lien1" href="javascript:tarteaucitron.userInterface.openPanel();">Gestion des cookies - </a>
+	<!--<a href="http://www.notaires.fr/notaires/jsp/site/Portal.jsp" target="_parent">voir site complet</a> <br/>-->
+	<a id="lien2" href="http://www.notaires.fr/notaires/jsp/site/Portal.jsp" target="_parent">Notaires de France</a>
+	</div>
+<div class="liens">
+<!--	<img src="../inc/img/afaq_iso.png" alt="logo afaq" style=" float: right;clear: both;margin-right: 22px;margin-top: 15px;margin-bottom:16px">
+	<img src="../inc/img/logo_notaire_pdp.png" alt="logo notaire" style=" clear: both;float: left;margin-left: 22px;margin-top: 15px;margin-bottom:16px">-->
+		<img src="../inc/img/logo_notaire_pdp.png" alt="logo notaire" style=" clear: left;float: left;margin-left: 22px;margin-top: 15px;margin-bottom:16px">
+	<img src="../inc/img/visio.png" alt="logo visio" style="float: right;clear: right;margin-right: 22px;margin-top: 15px;margin-bottom:16px">
+
+	</div>
+            <h5 id="title2">SAS Tamara CHERGUI-VILO Notaire Associé <br/>
+		<small style=" border-bottom: 1px #ccc solid; padding-bottom: 7px;">4, Rue Achille Ren&eacute;-Boisneuf 97110 POINTE-A-PITRE </small><br/>
+				<!--<p><small>Office notarial certifi&eacute; pour l'ensemble de ses activit&eacute;s. <br/></small>
+			<small>Certification ISO 9001 : 2015 num&eacute;ro 2014/60546.3 valable du 09-11-2017 au 08-11-2020. </small></p>-->
+			</h5>   </div>
+  <div style="font-size: 0.8em;line-height: 2em;"><small>En cas de litige non résolu avec un notaire, vous avez la possibilité de saisir le Médiateur du notariat à l'adresse suivante : <a href="https://mediateur-notariat.notaires.fr" target="_blank">mediateur-notariat.notaires.fr</a>  afin de tenter, avec son aide, de trouver une résolution amiable au conflit. Art. L616-1 et R 616-1 du code de la consommation</small></div>
+  
+   
+    
+	<!--[if IE]>
+   <script type="text/javascript" src="../inc/js/ie.js"></script>
+      	<script type="text/javascript" >
+var lang2 = document.querySelector("#lang2");
+lang2.setAttribute('onmousedown', 'javascript:document.location.href=\'../nous-situer.html\'');
+var lang1 = document.querySelector("#lang1");
+lang1.setAttribute('onmousedown', 'javascript:document.location.href=\'../en/find-us.html\'');
+</script>   
+	<![endif]-->
+	
+<script>
+if (/*@cc_on!@*/false) {
+function loadResourceFile(filename, filetype){
+if (filetype=="js" ){ //if filename is a external JavaScript file
+ var fileref=document.createElement('script');
+fileref.type = "text/javascript";
+fileref.src = filename;
+}
+else if (filetype=="css" ){ //if filename is an external CSS file
+ var fileref=document.createElement("link" );
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = filename;
+}
+if (typeof fileref!="undefined" )
+ document.getElementsByTagName("head" )[0].appendChild(fileref);
+}	
+	
+	loadResourceFile("../inc/style/ie.css", "css");
+loadResourceFile("../inc/js/ie.js", "js");
+var lang2 = document.querySelector("#lang2");
+lang2.setAttribute('onmousedown', 'javascript:document.location.href=\'../nous-situer.html\'');
+var lang1 = document.querySelector("#lang1");
+lang1.setAttribute('onmousedown', 'javascript:document.location.href=\'../en/find-us.html\'');
+}
+</script>
+
+<script type="text/javascript">
+        tarteaucitron.user.gajsUa = 'UA-4375591-22';
+        tarteaucitron.user.gajsMore = function () { 
+    var _gaq = _gaq || [];
+
+	$(document).ready(function(e) {
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + 
+                  '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+    }); 
+
+	$('[data-role=page]').live('pageshow', function (event, ui) {
+		try {
+			_gaq.push(['_setAccount', 'UA-4375591-22']);
+	
+			if ($.mobile.activePage.attr("data-url")) {
+			if (($.mobile.activePage.attr("data-url") == "page") || ($.mobile.activePage.attr("data-url") == "index.html") ) {
+			_gaq.push(['_trackPageview','gp/']);
+			}
+			else {
+				_gaq.push(['_trackPageview', 'gp/'+$.mobile.activePage.attr("data-url")]);
+			}
+			} else {
+				_gaq.push(['_trackPageview']);
+			}
+		} catch(err) {}
+	 
+	});
+
+		};
+        (tarteaucitron.job = tarteaucitron.job || []).push('gajs');
+        </script>
+      </div>
+      
+<script type="text/javascript" src="../inc/js/tac_custom.js"></script>   
+</body>
+>>>>>>> 9ceebdf (Modification page contact)
 </html>

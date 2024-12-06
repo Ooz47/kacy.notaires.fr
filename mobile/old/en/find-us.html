@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN"
+    "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html id="html"  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <title>Find us | SCP Alexandre KACY, notaire associ&eacute;</title>
+	        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="Content-Language" content="en-en" />
+      <link rel="stylesheet" type="text/css" media="screen" href="../../inc/style/jquery.mobile-1.0.1.css" />
+	  	  <link rel="stylesheet" type="text/css" media="screen" href="../../inc/style/style.css" />
+		  <!--[if IE]><link rel="stylesheet" type="text/css" media="screen" href="../../inc/style/ie.css" /><![endif]-->
+	   <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="screen" href="../../inc/style/ie7.css" /><![endif]-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.5.min.js"></script>
+      <script type="text/javascript" src="../../inc/js/jquery.mobile-1.0a3.min-en.js"></script>
+
+ 	  <script type="text/javascript">
+function scrollToBottom() {
+		$('html, body').animate({scrollTop:$(document).height()}, 'slow');
+	}
+</script>
+
+<script type="text/javascript" src="../../inc/js/tarteaucitron/tarteaucitron.js"></script>
+<script type="text/javascript" src="../../inc/js/tackacy.js"></script> 
+   </head>
+ <body id="body">  
+ <div data-role="page" id="page" > 
+        <div data-role="header" id="header" data-backbtn="false">
+            <h1 id="title">Find us</h1>
+<div ><a href="#" onMouseDown="javascript:scrollToBottom()" id="uptotop" ><img src="../../inc/img/menu.png" alt="bouton menu" width="37" height="37"/></a></div>
+</div>
+	<div data-role="content" id="content"> 
+		 <b>Address :</b> 4, Rue Achille Ren&eacute;-Boisneuf 97110 POINTE-A-PITRE <br/>
+           <p>
+<a id="lien_plan2" target="_blank" href="https://maps.google.com/maps?q=scp+kacy&hl=en&ll=16.236019,-61.535379&spn=0.008642,0.009645&hq=scp+kacy&t=h&cid=5322651419013171465&z=17&iwloc=A"><img src="../../inc/img/plan_acces_petit.jpg" alt="Plan d'accès SCP KACY" width="251" height="250"/></a>
+<br /><small id="lien_plan" >Display <a target="_blank" href="https://maps.google.com/maps?q=scp+kacy&hl=en&ll=16.236019,-61.535379&spn=0.008642,0.009645&hq=scp+kacy&t=h&cid=5322651419013171465&z=17&iwloc=A" style="color:#0000FF;text-align:left">SCP KACY</a> on a larger map</small>
+</p><br/>
+            <ul data-role="listview" id="listview">
+               <li id="option"><a href="index.html">Home</a></li>
+			  <li id="option2"><a href="contact-us.html">Contact us</a></li>
+			  <li id="option5"><a href="your-notary-appointment.html">Preparing for your appointment</a></li>
+			  <li id="option6"><a href="https://www.mondossiernotaire.fr/" target="_blank">Client area</a></li>
+			   <li id="option7"><a href="https://paiement.genapicloud.com/CDCProxy/Form?Guid=568e224e-c274-4a48-991f-ceb1f72981a4" target="_blank">Online payment</a></li>
+                 <li id="option3"><a class="contact" href="https://www.kacy.notaires.fr/mobile/SCP-KACY.vcf">Add us to your address book</a></li>
+			  <li id="option4"><a href="tel:+590590820130">Call us now</a></li>
+            </ul>
+			
+				<script type="text/javascript" >
+	 
+	  	  var agent=navigator.userAgent.toLowerCase();
+		   var is_blackberry = (agent.indexOf('blackberry')!=-1);
+  	  var is_iphone = (agent.indexOf('iphone')!=-1);
+	 // var is_iphone = (agent.indexOf('mozilla/5.0')!=-1);
+        var is_ipod = (agent.indexOf('ipod')!=-1);
+        var is_ipad = (agent.indexOf('ipad')!=-1);
+		//alert(agent);
+        if (is_iphone||is_ipod||is_ipad){
+		        $(".contact").click(function(e) {
+                e.preventDefault();
+				e.stopPropagation();
+                        var adresse = window.prompt("Please enter your e-mail address below in order to receive our business card. (Please note, your e-mail address will not be retained by our servers)","");
+                        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                       
+						if(adresse == null){
+						
+						}
+						else{
+						
+						if((emailReg.test(adresse)) &&(( adresse != ''))){
+						jQuery.ajax({
+                                        data: {adr:adresse},
+                                        url: 'vcf.php',
+                                        success: function(){alert("Sent")},
+                                        error: function(){alert("Sent")}
+                                });
+                        }else{
+						       alert("Incorrect e-mail address");
+                        }
+						}
+                });
+        }
+		
+		 if (is_blackberry){
+		//alert("is_blackberry");
+		    $(".contact").click(function(e) {
+                e.preventDefault();
+				e.stopPropagation();
+                    location.href= "../SCP_KACY.vcf" ;
+                });
+			document.getElementById('lien_plan').style.display = 'none';
+	document.getElementById('lien_plan2').setAttribute('href', '#');
+		}
+		
+	  </script>
+         </div>
+		  <div data-role="footer"  id="footer">
+            <h5 id="title2">SCP Alexandre KACY, notaire associ&eacute; <br/>
+			<small style=" border-bottom: 1px #ccc solid; padding-bottom: 7px;">4, Rue Achille Ren&eacute;-Boisneuf 97110 POINTE-A-PITRE </small><br/>
+		<!--	<p><small>Notary's office certified for all its activities. <br/></small>
+			<small>Certification ISO 9001 : 2015 number 2014/60546.3 valid from 2017-11-09 until 2020-11-08. </small></p>-->
+			</h5></div>
+		 <div style="font-size: 0.8em;line-height: 1em;clear: both;"><small>En cas de litige non résolu avec un notaire, vous avez la possibilité de saisir le Médiateur du notariat à l'adresse suivante : <a href="https://mediateur-notariat.notaires.fr" target="_blank">mediateur-notariat.notaires.fr</a>  afin de tenter, avec son aide, de trouver une résolution amiable au conflit. Art. L616-1 et R 616-1 du code de la consommation</small></div>
+  
+			<div class="langue" > <a id="lang1" href="#" onMouseDown="javascript:document.location.href='../#nous-situer.html'">Fran&ccedil;ais</a><br/>
+   <a id="lang2" href="#" onMouseDown="javascript:document.location.href='../gp/#touve-kote-nou-ye.html'">Kreyol</a></div>
+		 
+    <div class="liens">
+	<a id="lien1" href="legal-notices.html">Legal notices</a><br/>
+	<a id="lien1" href="javascript:tarteaucitron.userInterface.openPanel();">Cookies management</a><br/> 
+	<!--<a href="http://www.notaires.fr/notaires/jsp/site/Portal.jsp" target="_parent">voir site complet</a> <br/>-->
+	<a id="lien2" href="http://www.notaires.fr/notaires/jsp/site/Portal.jsp" target="_parent">Notaires de France</a>
+	</div>	 
+		 
+<!--[if IE]>
+<script type="text/javascript" src="../../inc/js/ie.js"></script>
+<script type="text/javascript" >
+var lang2 = document.querySelector("#lang2");
+lang2.setAttribute('onmousedown', 'javascript:document.location.href=\'../gp/touve-kote-nou-ye.html\'');
+var lang1 = document.querySelector("#lang1");
+lang1.setAttribute('onmousedown', 'javascript:document.location.href=\'../nous-situer.html\'');
+</script>
+<![endif]-->
+
+<script>
+if (/*@cc_on!@*/false) {
+function loadResourceFile(filename, filetype){
+if (filetype=="js" ){ //if filename is a external JavaScript file
+ var fileref=document.createElement('script');
+fileref.type = "text/javascript";
+fileref.src = filename;
+}
+else if (filetype=="css" ){ //if filename is an external CSS file
+ var fileref=document.createElement("link" );
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = filename;
+}
+if (typeof fileref!="undefined" )
+ document.getElementsByTagName("head" )[0].appendChild(fileref);
+}	
+	
+	loadResourceFile("../../inc/style/ie.css", "css");
+loadResourceFile("../../inc/js/ie.js", "js");
+var lang2 = document.querySelector("#lang2");
+lang2.setAttribute('onmousedown', 'javascript:document.location.href=\'../gp/touve-kote-nou-ye.html\'');
+var lang1 = document.querySelector("#lang1");
+lang1.setAttribute('onmousedown', 'javascript:document.location.href=\'../nous-situer.html\'');
+}
+</script>
+
+<script type="text/javascript">
+        tarteaucitron.user.gajsUa = 'UA-4375591-22';
+        tarteaucitron.user.gajsMore = function () { 
+    var _gaq = _gaq || [];
+
+	$(document).ready(function(e) {
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + 
+                  '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+    }); 
+
+	$('[data-role=page]').live('pageshow', function (event, ui) {
+		try {
+			_gaq.push(['_setAccount', 'UA-4375591-22']);
+	
+			if ($.mobile.activePage.attr("data-url")) {
+			if (($.mobile.activePage.attr("data-url") == "page") || ($.mobile.activePage.attr("data-url") == "index.html") ) {
+			_gaq.push(['_trackPageview','mobile/en/']);
+			}
+			else {
+				_gaq.push(['_trackPageview', 'mobile/en/'+$.mobile.activePage.attr("data-url")]);
+			}
+			} else {
+				_gaq.push(['_trackPageview']);
+			}
+		} catch(err) {}
+	 
+	});
+
+		};
+        (tarteaucitron.job = tarteaucitron.job || []).push('gajs');
+        </script>
+      </div>
+      
+<script type="text/javascript" src="../../inc/js/tac_custom.js"></script>   
+</body>
+</html>
